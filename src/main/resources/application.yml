@@ -1,1 +1,4 @@
-spring.application.name=spring-idempotency
+spring:
+  servlet:
+    encoding:
+      force-response: true
