@@ -2,3 +2,15 @@ spring:
   servlet:
     encoding:
       force-response: true
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      username: default
+      password: test_password
+
+springdoc:
+  swagger-ui:
+    enabled: true
+  api-docs:
+    enabled: true
