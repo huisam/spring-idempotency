@@ -24,6 +24,8 @@ class PaymentController {
     fun pay(
         @RequestBody paymentPayRequestDto: PaymentPayRequestDto
     ): ResponseEntity<PaymentPayResponseDto> {
+        Thread.sleep(2000) // Simulate processing time
+
         return ResponseEntity.ok(
             PaymentPayResponseDto(
                 paymentId = Uuid.random().toHexDashString()

@@ -1,0 +1,12 @@
+### Make payment
+POST http://localhost:8080/api/v1/payments/pay
+Idempotency-Key: test1
+Content-Type: application/json
+
+{
+  "amount": 100.00,
+  "paymentMethod": "creditCard"
+}
+
+### Get payment
+GET http://localhost:8080/api/v1/payments/1234
